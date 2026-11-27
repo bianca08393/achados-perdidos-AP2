@@ -58,3 +58,31 @@ Em src/services/itens.js, conferir verifica o dono e se o item ainda está abert
 
 ## Limitações
 Não há upload de fotos, recuperação de senha ou confirmação de email. A sessão fica em memória e termina ao atualizar a página. Contas de demonstração são apenas para teste local. Não foi configurada publicação em produção. O cadastro retorna 409 para email existente, permitindo enumeração de contas mesmo com limite de tentativas. Em desenvolvimento, Helmet não força HTTPS; em produção, configure NODE_ENV=production e HTTPS. O token expira em duas horas e a interface retorna ao login ao receber 401.
+
+
+## Testes realizados
+
+Foram realizados testes manuais no navegador para verificar
+o funcionamento do sistema.
+
+- Cadastro e login de usuários.
+- Cadastro, edição e exclusão de itens.
+- Devolução de itens.
+- Bloqueio de edição de itens já devolvidos.
+- Visualização dos itens cadastrados por outros usuários.
+- Verificação das permissões na interface.
+- Visualização das estatísticas pelo administrador.
+
+Os testes acima apresentaram os resultados esperados.
+
+## Observação sobre a instalação no Windows
+
+Caso o PowerShell bloqueie a execução do npm, é possível
+utilizar os seguintes comandos:
+
+```sh
+npm.cmd install
+npm.cmd run seed
+npm.cmd start
+```
+
