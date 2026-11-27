@@ -1,0 +1,1 @@
+{"name":"achados-perdidos","version":"1.0.0","scripts":{"start":"node src/app.js","seed":"node src/seed.js"},"dependencies":{"express":"^4.21.2","better-sqlite3":"^11.10.0","bcrypt":"^6.0.0","jsonwebtoken":"^9.0.2","dotenv":"^16.5.0","helmet":"^8.1.0","express-rate-limit":"^7.5.0"}}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Interface do mural e formulários de autenticação. -->
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Achados e Perdidos
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="app.js">
+  </script>
+ </head>
+ <body>
+  <main>
+   <h1>
+    Achados e Perdidos
+   </h1>
+   <p id="mensagem" role="status">
+   </p>
+   <section id="acesso">
+    <h2>
+     Entrar
+    </h2>
+    <form id="login">
+     <input name="email" placeholder="Email" required="" type="email"/>
+     <input name="senha" placeholder="Senha" required="" type="password"/>
+     <button>
+      Entrar
+     </button>
+    </form>
+    <h2>
+     Cadastro
+    </h2>
+    <form id="cadastro">
+     <input name="nome" placeholder="Nome" required=""/>
+     <input name="email" placeholder="Email" required="" type="email"/>
+     <input minlength="8" name="senha" placeholder="Senha" required="" type="password"/>
+     <button>
+      Cadastrar
+     </button>
+    </form>
+   </section>
+   <section hidden="" id="mural">
+    <p id="usuario">
+    </p>
+    <button id="sair">
+     Sair
+    </button>
+    <form id="item">
+     <h2 id="formTitulo">
+      Cadastrar item
+     </h2>
+     <input maxlength="100" name="titulo" placeholder="T&iacute;tulo" required=""/>
+     <textarea maxlength="500" name="descricao" placeholder="Descri&ccedil;&atilde;o" required=""></textarea>
+     <select name="tipo">
+      <option value="achado">
+       Achado
+      </option>
+      <option value="perdido">
+       Perdido
+      </option>
+     </select>
+     <button>
+      Salvar
+     </button>
+     <button id="cancelar" type="button">
+      Cancelar edi&ccedil;&atilde;o
+     </button>
+    </form>
+    <h2>
+     Itens cadastrados
+    </h2>
+    <p id="estado" role="status">
+    </p>
+    <div id="lista">
+    </div>
+    <p id="totais">
+    </p>
+   </section>
+  </main>
+ </body>
+</html>
